@@ -1,0 +1,144 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #bfc3c6;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #6e6e6e;
+    border-radius: 5px;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	list-style: none;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+	display: block;
+}
+img {
+    vertical-align: top;
+	width: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbarr {
+    padding: 10px;
+}
+.nav_logo {
+    width: 75px;
+}
+.nav_block {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.nav_link {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+.nav_link:hover {
+    color: #d72145;
+}
+.nav_link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #d72145;
+    transition: width .7s;
+}
+.nav_link:hover::after {
+    width: 100%;
+}
+.nav_item .strides_btn {
+    padding: 8px !important;
+    margin-top: 9px;
+}
+.strides {
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(17, 17, 17, 0.4);
+}
+.strides_block h1 {
+    max-width: 770px;
+    font-weight: 700;
+    margin: 0 auto 50px;
+    text-align: center;
+    background-color: #bf002482;
+    border-radius: 15px;
+    padding: 15px;
+}
+.strides_block_before {
+    display: flex;
+    justify-content: space-evenly;
+}
+.strides_block_before p {
+    max-width: 500px;
+    text-align: center;
+    background-color: #bf002482;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0;
+}
+.strides .main_container {
+    padding-top: 235px;
+    padding-bottom: 80px;
+    color: #fff;
+}
+.strides_background {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+}
+.strides_background video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.strides_block .strides_btn {
+    margin: 50px auto;
+}
+.strides_btn {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 4px solid #d72145;
+    border-radius: 60px;
+    background: #d72145;
+	font-weight: 700;
+    font-size: 16px !important;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.strides_btn:hover {
+    background: transparent;
+    color: #d72145;
+}
+.strides_btn:active {
+    top: 2px;
+}
